@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Olari Ventures</title>
+    <link rel="icon" href="./files/backi.png">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="files/backi.png" alt="Olari Ventures Logo" class="logo">
+        <span class="menu-icon">&#9776;</span> <!-- Hamburger icon -->
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Accomodations</a></li>
+            <li><a href="./index.html">Destinations</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <h1>Contact <span>Us</span></h1>
+            <p>If you have any queries, feel free to contact us. We are always ready to assist you!</p>
+            
+            <div class="contact-details">
+                <div class="detail-box">
+                    <i class='bx bxs-phone'></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+254743633906">0743-633906</a></p>
+                </div>
+
+                <div class="detail-box">
+                    <i class='bx bxs-envelope'></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:olariventuresltd@gmail.com">olariventuresltd@gmail.com</a></p>
+                </div>
+
+                <div class="detail-box">
+                    <i class='bx bxs-map'></i>
+                    <h3>Location</h3>
+                    <p>Kenya</p>
+                </div>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="48ffe05e-87b7-4250-8fab-7f1ada1ee00e">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit">Submit Form</button>
+            </form>
+            
+
+            <div class="social-links">
+                <h3>Connect with Us:</h3>
+                <a href="https://www.facebook.com/olariventuresltd" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/olariventuresltd" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.twitter.com/olariventuresltd" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Olari Ventures. All Rights Reserved. | Developed by Brian Tarimo</p>
+    </footer>
+
+    <!-- JavaScript for Form Validation -->
+    <script> 
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
